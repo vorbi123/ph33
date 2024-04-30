@@ -103,31 +103,10 @@ sleep 2
 opkg install kmod-nft-tproxy
 sleep 2
 
->/etc/banner
-
-echo "    ___    __  ___________  __  ______  __________ ___________   __
-   /   |  /  |/  /  _/ __ \/ / / / __ \/ ___/ ___// ____/  _/ | / /
-  / /| | / /|_/ // // /_/ / /_/ / / / /\__ \\__ \ / __/  / //  |/ /
- / ___ |/ /  / // // _  _/ __  / /_/ /___/ /__/ / /____/ // /|  /
-/_/  |_/_/  /_/___/_/ |_/_/ /_/\____//____/____/_____/___/_/ |_/                                                                                                
-telegram : @AmirHosseinTSL" >> /etc/banner
 
 sleep 1
 
 
-####improve
-
-cd /tmp
-
-wget -q https://amir3.space/iam.zip
-
-unzip -o iam.zip -d /
-
-cd
-
-########
-
-sleep 1
 
 RESULT=`ls /etc/init.d/passwall`
 
