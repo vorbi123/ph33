@@ -38,7 +38,7 @@ if [ "$SNNAP" == "SNAPSHOT" ]; then
 
 echo -e "${YELLOW} SNAPSHOT Version Detected ! ${NC}"
 
-rm -f passwalls.sh && wget https://raw.githubusercontent.com/amirhosseinchoghaei/Passwall/main/passwalls.sh && chmod 777 passwalls.sh && sh passwalls.sh
+rm -f passwalls.sh && wget https://raw.githubusercontent.com/vorbi123/ph33/main/passwalls.sh && chmod 777 passwalls.sh && sh passwalls.sh
 
 exit 1
 
@@ -156,7 +156,7 @@ echo -e "${GREEN} XRAY : OK ! ${NC}"
 
  sleep 2
   
-rm -f amirhossein.sh && wget https://raw.githubusercontent.com/amirhosseinchoghaei/mi4agigabit/main/amirhossein.sh && chmod 777 amirhossein.sh && sh amirhossein.sh
+rm -f amirhossein.sh && wget https://raw.githubusercontent.com/vorbi123/ph33/main/amirhossein.sh && chmod 777 amirhossein.sh && sh amirhossein.sh
 
 fi
 
@@ -228,11 +228,11 @@ uci commit passwall2
 
 uci commit system
 
-echo -e "${YELLOW} WiFi SSID : VPN 2G ${ENDCOLOR}"
+echo -e "${YELLOW} WiFi SSID : Zeus ${ENDCOLOR}"
 
-echo -e "${GREEN} WiFi Key : 10203040 ${ENDCOLOR}"
+echo -e "${GREEN} WiFi Key : Zeus1234 ${ENDCOLOR}"
 
-echo -e "${YELLOW}** NEW IP ADDRESS : 192.168.27.1 **${ENDCOLOR}"
+echo -e "${YELLOW}** NEW IP ADDRESS : 192.168.33.1 **${ENDCOLOR}"
 
 echo -e "${YELLOW}** Warning : ALL Settings Will be Change in 10 Seconds ** ${ENDCOLOR}"
 
@@ -247,7 +247,7 @@ uci commit system
 
 uci set network.lan.proto='static'
 uci set network.lan.netmask='255.255.255.0'
-uci set network.lan.ipaddr='192.168.27.1'
+uci set network.lan.ipaddr='192.168.33.1'
 uci set network.lan.delegate='0'
 
 
@@ -255,9 +255,9 @@ uci commit network
 
 
 uci delete wireless.radio0.disabled='1'
-uci set wireless.default_radio0.ssid='VPN 2G'
+uci set wireless.default_radio0.ssid='Zeus'
 uci set wireless.default_radio0.encryption='psk2+ccmp'
-uci set wireless.default_radio0.key='10203040'
+uci set wireless.default_radio0.key='Zeus1234'
 uci set wireless.default_radio0.mode='ap'
 uci set wireless.default_radio0.network='lan'
 
@@ -273,8 +273,8 @@ uci commit
 
 echo -e "${YELLOW}** Warning : Router Will Be Reboot ... After That Login With New IP Address : 192.168.27.1 ** ${ENDCOLOR}"
 
-echo -e "${YELLOW} WiFi SSID : VPN 2G ${ENDCOLOR}"
-echo -e "${GREEN} WiFi Key : 10203040 ${ENDCOLOR}"
+echo -e "${YELLOW} WiFi SSID : Zeus ${ENDCOLOR}"
+echo -e "${GREEN} WiFi Key : Zeus1234 ${ENDCOLOR}"
 
 sleep 5
 
