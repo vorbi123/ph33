@@ -224,7 +224,7 @@ echo -e "${MAGENTA} Made With Love By : AmirHossein ${ENDCOLOR}"
 
 sleep 10
 
-uci set system.@system[0].hostname=By-AmirHossein
+uci set system.@system[0].hostname=OpenWRT
 
 uci commit system
 
@@ -246,7 +246,7 @@ uci commit passwall
 
 uci set network.lan.proto='static'
 uci set network.lan.netmask='255.255.255.0'
-uci set network.lan.ipaddr='192.168.27.1'
+uci set network.lan.ipaddr='192.168.33.1'
 uci set network.lan.delegate='0'
 
 
